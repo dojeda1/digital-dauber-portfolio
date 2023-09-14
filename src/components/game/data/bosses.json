@@ -1,0 +1,236 @@
+[
+    [
+        {
+            "name": "Bob",
+            "title": "the Persistent",
+            "type": "boss",
+            "sprite": "/images/game/bob.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 40,
+            "mpMax": 12,
+            "strength": 9,
+            "defense": 4,
+            "will": 8,
+            "speed": 12,
+            "luck": 6,
+            "xp": 40,
+            "inventory": [],
+            "abilities": [
+                "Poison Dagger"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 50
+        },
+        {
+            "name": "Goblong",
+            "title": "the Goblin King",
+            "type": "boss",
+            "sprite": "/images/game/goblong.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 50,
+            "mpMax": 18,
+            "strength": 15,
+            "defense": 5,
+            "will": 10,
+            "speed": 16,
+            "luck": 8,
+            "xp": 50,
+            "inventory": [],
+            "abilities": [
+                "Axe Strike",
+                "Steal"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 50
+        }
+    ],
+    [
+        {
+            "name": "Brutus",
+            "title": "Crusher of Skulls",
+            "type": "boss",
+            "sprite": "/images/game/brutus.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 60,
+            "mpMax": 12,
+            "strength": 15,
+            "defense": 6,
+            "will": 10,
+            "speed": 15,
+            "luck": 6,
+            "xp": 75,
+            "inventory": [],
+            "abilities": [
+                "Axe Strike",
+                "Berserk"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 80
+        },
+        {
+            "name": "Xerus",
+            "title": "Mother of Spiders",
+            "type": "boss",
+            "sprite": "/images/game/xerus.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 65,
+            "mpMax": 12,
+            "strength": 15,
+            "defense": 7,
+            "will": 13,
+            "speed": 15,
+            "luck": 5,
+            "xp": 75,
+            "inventory": [],
+            "abilities": [
+                "Poison Fang"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 80
+        },
+        {
+            "name": "Celene",
+            "title": "Collector of Lost Souls",
+            "type": "boss",
+            "sprite": "/images/game/celene.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 70,
+            "mpMax": 20,
+            "strength": 20,
+            "defense": 8,
+            "will": 20,
+            "speed": 12,
+            "luck": 6,
+            "xp": 100,
+            "inventory": [],
+            "abilities": [
+                "Heal"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 85
+        }
+    ],
+    [
+        {
+            "name": "Rigor",
+            "title": "the Grand Dire Wolf",
+            "type": "boss",
+            "sprite": "/images/game/rigor.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 85,
+            "mpMax": 12,
+            "strength": 25,
+            "defense": 9,
+            "will": 20,
+            "speed": 15,
+            "luck": 5,
+            "xp": 100,
+            "inventory": [],
+            "abilities": [
+                "Bite"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 120
+        },
+        {
+            "name": "Lilith",
+            "title": "Demon of the Black Lake",
+            "type": "boss",
+            "sprite": "/images/game/lilith.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 90,
+            "mpMax": 24,
+            "strength": 25,
+            "defense": 9,
+            "will": 25,
+            "speed": 25,
+            "luck": 8,
+            "xp": 100,
+            "inventory": [],
+            "abilities": [
+                "Fireball",
+                "Poison Fang"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 150
+        },
+        {
+            "name": "Valdora",
+            "title": "Elder Dragon of the Skies",
+            "type": "boss",
+            "sprite": "/images/game/valdora.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 100,
+            "mpMax": 24,
+            "strength": 30,
+            "defense": 12,
+            "will": 30,
+            "speed": 30,
+            "luck": 8,
+            "xp": 100,
+            "inventory": [],
+            "abilities": [
+                "Fireball",
+                "Bite"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 150
+        }
+    ]
+]

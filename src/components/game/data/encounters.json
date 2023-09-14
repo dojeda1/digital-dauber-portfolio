@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Chest",
+        "type": "common",
+        "sprite": "/images/game/chest.png",
+        "itemSprite": "",
+        "note": "",
+        "inventory": [],
+        "gold": 10
+    },
+    {
+        "name": "Mimic",
+        "type": "common",
+        "sprite": "/images/game/mimic.png",
+        "itemSprite": "",
+        "abilitySprite": "",
+        "note": "",
+        "hpMax": 20,
+        "mpMax": 10,
+        "strength": 2,
+        "defense": 0,
+        "will": 0,
+        "speed": 2,
+        "luck": 2,
+        "xp": 5,
+        "inventory": [],
+        "abilities": ["Steal"],
+        "status": {
+            "Berserk": 0,
+            "Bleed": 0,
+            "Burn": 0,
+            "Poison": 0
+        },
+        "gold": 50
+    },
+    {
+        "name": "Dungeon",
+        "type": "common",
+        "sprite": "/images/game/dungeon.png",
+        "itemSprite": "",
+        "note": ""
+    },
+    {
+        "name": "Quest Board",
+        "type": "common",
+        "sprite": "/images/game/quest-board.png",
+        "itemSprite": "",
+        "note": ""
+    },
+    {
+        "name": "Shop",
+        "type": "common",
+        "sprite": "/images/game/shop.png",
+        "itemSprite": "",
+        "note": ""
+    },
+    {
+        "name": "Tavern",
+        "type": "common",
+        "sprite": "/images/game/tavern.png",
+        "itemSprite": "",
+        "note": ""
+    },
+    {
+        "name": "Traveling Merchant",
+        "type": "common",
+        "sprite": "/images/game/merchant.png",
+        "itemSprite": "",
+        "note": ""
+    },
+    {
+        "name": "Old Adventurer",
+        "type": "common",
+        "sprite": "/images/game/adventurer.png",
+        "itemSprite": "",
+        "note": ""
+    }
+]

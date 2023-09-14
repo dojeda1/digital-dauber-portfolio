@@ -1,0 +1,91 @@
+[
+    {
+        "name": "Grue",
+        "title": "the Devourer",
+        "type": "endBoss",
+        "sprite": "/images/game/grue.png",
+        "itemSprite": "",
+        "abilitySprite": "",
+        "note": "",
+        "hpMax": 45,
+        "mpMax": 12,
+        "strength": 12,
+        "defense": 6,
+        "will": 12,
+        "speed": 15,
+        "luck": 10,
+        "xp": 45,
+        "inventory": [],
+        "abilities": [
+            "Bite"
+        ],
+        "status": {
+            "Berserk": 0,
+            "Bleed": 0,
+            "Burn": 0,
+            "Poison": 0
+        },
+        "gold": 100,
+        "isDead": false
+    },
+    {
+        "name": "Arealus",
+        "title": "the White Lion",
+        "type": "endBoss",
+        "sprite": "/images/game/arealus.png",
+        "itemSprite": "",
+        "abilitySprite": "",
+        "note": "",
+        "hpMax": 70,
+        "mpMax": 20,
+        "strength": 18,
+        "defense": 9,
+        "will": 22,
+        "speed": 17,
+        "luck": 8,
+        "xp": 75,
+        "inventory": [],
+        "abilities": [
+            "Heal",
+            "Bite"
+        ],
+        "status": {
+            "Berserk": 0,
+            "Bleed": 0,
+            "Burn": 0,
+            "Poison": 0
+        },
+        "gold": 100,
+        "isDead": false
+    },
+    {
+        "name": "Asteroth",
+        "title": "Master of Darkness",
+        "type": "finalBoss",
+        "sprite": "/images/game/asteroth.png",
+        "itemSprite": "",
+        "abilitySprite": "",
+        "note": "",
+        "hpMax": 200,
+        "mpMax": 24,
+        "strength": 40,
+        "defense": 15,
+        "will": 40,
+        "speed": 40,
+        "luck": 15,
+        "xp": 200,
+        "inventory": [],
+        "abilities": [
+            "Axe Strike",
+            "Evil Eye",
+            "Berserk"],
+        "status": {
+            "Berserk": 0,
+            "Bleed": 0,
+            "Burn": 0,
+            "Poison": 0
+        },
+        "gold": 1000,
+        "isDead": false
+    }
+]

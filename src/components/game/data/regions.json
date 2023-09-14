@@ -1,0 +1,38 @@
+[
+    {
+        "index": 0,
+        "name": "Plains",
+        "sprite": "/images/game/plains.png",
+        "level": 1,
+        "targetLevel": 3,
+        "dungeonGoal": 3,
+        "endBossKills": 0,
+        "bossKills": 0,
+        "discovered": true,
+        "kills": 0
+    },
+    {
+        "index": 1,
+        "name": "Forest",
+        "sprite": "/images/game/forest.png",
+        "level": 3,
+        "targetLevel": 6,
+        "dungeonGoal": 4,
+        "endBossKills": 0,
+        "bossKills": 0,
+        "discovered": false,
+        "kills": 0
+    },
+    {
+        "index": 2,
+        "name": "Mountains",
+        "sprite": "/images/game/mountains.png",
+        "level": 6,
+        "targetLevel": 9,
+        "dungeonGoal": 5,
+        "endBossKills": 0,
+        "bossKills": 0,
+        "discovered": false,
+        "kills": 0
+    }
+]

@@ -1,0 +1,299 @@
+[
+    [
+        {
+            "name": "Slime",
+            "type": "common",
+            "sprite": "/images/game/slime.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 20,
+            "mpMax": 10,
+            "strength": 5,
+            "defense": 0,
+            "will": 4,
+            "speed": 12,
+            "luck": 3,
+            "xp": 10,
+            "inventory": [],
+            "abilities": [],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 10
+        },
+        {
+            "name": "Wolf",
+            "type": "common",
+            "sprite": "/images/game/wolf.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 32,
+            "mpMax": 6,
+            "strength": 7,
+            "defense": 2,
+            "will": 4,
+            "speed": 15,
+            "luck": 3,
+            "xp": 12,
+            "inventory": [],
+            "abilities": [
+                "Bite"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 10
+        },
+        {
+            "name": "Goblin",
+            "type": "common",
+            "sprite": "/images/game/goblin.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 35,
+            "mpMax": 10,
+            "strength": 9,
+            "defense": 3,
+            "will": 5,
+            "speed": 16,
+            "luck": 3,
+            "xp": 15,
+            "inventory": [],
+            "abilities": [
+                "Axe Strike",
+                "Steal"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 10
+        }
+    ],
+    [
+        {
+            "name": "Orc",
+            "type": "common",
+            "sprite": "/images/game/orc.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 40,
+            "mpMax": 12,
+            "strength": 10,
+            "defense": 4,
+            "will": 5,
+            "speed": 16,
+            "luck": 4,
+            "xp": 20,
+            "inventory": [],
+            "abilities": [
+                "Axe Strike"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 13
+        },
+        {
+            "name": "Harpy",
+            "type": "common",
+            "sprite": "/images/game/harpy.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 45,
+            "mpMax": 0,
+            "strength": 15,
+            "speed": 20,
+            "defense": 6,
+            "will": 8,
+            "luck": 6,
+            "xp": 25,
+            "inventory": [],
+            "abilities": [],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 13
+        },
+        {
+            "name": "Spider",
+            "type": "common",
+            "sprite": "/images/game/spider.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 45,
+            "mpMax": 18,
+            "strength": 16,
+            "speed": 20,
+            "defense": 7,
+            "will": 10,
+            "luck": 6,
+            "xp": 25,
+            "inventory": [],
+            "abilities": [
+                "Poison Fang"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 13
+        },
+        {
+            "name": "Ogre",
+            "type": "common",
+            "sprite": "/images/game/ogre.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 50,
+            "mpMax": 0,
+            "strength": 17,
+            "speed": 12,
+            "defense": 9,
+            "will": 12,
+            "luck": 7,
+            "xp": 30,
+            "inventory": [],
+            "abilities": [],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 13
+        }
+    ],
+    [
+        {
+            "name": "Dire Wolf",
+            "type": "common",
+            "sprite": "/images/game/dire-wolf.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 50,
+            "mpMax": 12,
+            "strength": 20,
+            "defense": 6,
+            "will": 15,
+            "speed": 15,
+            "luck": 8,
+            "xp": 30,
+            "inventory": [],
+            "abilities": [
+                "Bite"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 15
+        },
+        {
+            "name": "Giant",
+            "type": "common",
+            "sprite": "/images/game/giant.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 55,
+            "mpMax": 0,
+            "strength": 22,
+            "defense": 10,
+            "will": 18,
+            "speed": 12,
+            "luck": 5,
+            "xp": 35,
+            "inventory": [],
+            "abilities": [],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 15
+        },
+        {
+            "name": "Demon",
+            "type": "common",
+            "sprite": "/images/game/demon.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 60,
+            "mpMax": 25,
+            "strength": 25,
+            "defense": 9,
+            "will": 25,
+            "speed": 25,
+            "luck": 10,
+            "xp": 40,
+            "inventory": [],
+            "abilities": [
+                "Fireball",
+                "Steal"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 15
+        },
+        {
+            "name": "Dragon",
+            "type": "common",
+            "sprite": "/images/game/dragon.png",
+            "itemSprite": "",
+            "abilitySprite": "",
+            "note": "",
+            "hpMax": 70,
+            "mpMax": 30,
+            "strength": 30,
+            "defense": 12,
+            "will": 30,
+            "speed": 20,
+            "luck": 15,
+            "xp": 50,
+            "inventory": [],
+            "abilities": [
+                "Fireball"
+            ],
+            "status": {
+                "Berserk": 0,
+                "Bleed": 0,
+                "Burn": 0,
+                "Poison": 0
+            },
+            "gold": 17
+        }
+    ]
+]

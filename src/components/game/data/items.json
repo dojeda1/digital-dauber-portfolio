@@ -1,0 +1,321 @@
+[
+    [
+        {
+            "name": "Health Potion",
+            "sprite": "/images/game/potion-small.png",
+            "order": 3,
+            "qty": 1,
+            "buy": 10,
+            "sell": 5,
+            "recover": 0.5,
+            "info": "Recovers 50% of max HP."
+        },
+        {
+            "name": "Mana Potion",
+            "sprite": "/images/game/potion-small.png",
+            "order": 6,
+            "qty": 1,
+            "buy": 10,
+            "sell": 5,
+            "recover": 0.5,
+            "info": "Recovers 50% of max MP."
+        }
+    ],
+    [
+        {
+            "name": "Greater Health Potion",
+            "sprite": "/images/game/potion-medium.png",
+            "order": 2,
+            "qty": 1,
+            "buy": 18,
+            "sell": 9,
+            "recover": 0.75,
+            "info": "Recovers 75% of max HP."
+        },
+        {
+            "name": "Greater Mana Potion",
+            "sprite": "/images/game/potion-medium.png",
+            "order": 5,
+            "qty": 1,
+            "buy": 18,
+            "sell": 9,
+            "recover": 0.75,
+            "info": "Recovers 75% of max MP."
+        }
+    ],
+    [
+        {
+            "name": "Superior Health Potion",
+            "sprite": "/images/game/potion-large.png",
+            "order": 1,
+            "qty": 1,
+            "buy": 30,
+            "sell": 15,
+            "recover": 1,
+            "info": "Recovers 100% of max HP."
+        },
+        {
+            "name": "Superior Mana Potion",
+            "sprite": "/images/game/potion-large.png",
+            "order": 4,
+            "qty": 1,
+            "buy": 30,
+            "sell": 15,
+            "recover": 1,
+            "info": "Recovers 100% of max MP."
+        }
+    ],
+    [
+        {
+            "name": "Bandage",
+            "sprite": "/images/game/bandage.png",
+            "order": 10,
+            "qty": 1,
+            "buy": 20,
+            "sell": 10,
+            "info": "Removes Bleed status effect."
+        },
+        {
+            "name": "Antidote",
+            "sprite": "/images/game/antidote.png",
+            "order": 11,
+            "qty": 1,
+            "buy": 20,
+            "sell": 10,
+            "info": "Removes Poison status effect."
+        },
+        {
+            "name": "Remedy",
+            "sprite": "/images/game/remedy.png",
+            "order": 12,
+            "qty": 1,
+            "buy": 20,
+            "sell": 10,
+            "info": "Removes Burn status effect."
+        }
+    ],
+    [    
+        {
+            "name": "Map",
+            "sprite": "/images/game/map.png",
+            "order": 20,
+            "qty": 1,
+            "buy": 100,
+            "sell": 50,
+            "info": "Leads you directly to a Dungeon."
+        },
+        {
+            "name": "Flame Scroll",
+            "sprite": "/images/game/scroll.png",
+            "order": 21,
+            "qty": 1,
+            "buy": 40,
+            "sell": 20,
+            "info": "Give enemy Burn."
+        },
+        {
+            "name": "Venom Scroll",
+            "sprite": "/images/game/scroll.png",
+            "order": 22,
+            "qty": 1,
+            "buy": 40,
+            "sell": 20,
+            "info": "Give enemy Poison."
+        },
+        {
+            "name": "Blood Scroll",
+            "sprite": "/images/game/scroll.png",
+            "order": 23,
+            "qty": 1,
+            "buy": 40,
+            "sell": 20,
+            "info": "Give enemy Bleed."
+        },
+        {
+            "name": "Death Scroll",
+            "sprite": "/images/game/scroll.png",
+            "order": 24,
+            "qty": 1,
+            "buy": 150,
+            "sell": 75,
+            "info": "Instantly kill common enemies."
+        },
+        {
+            "name": "Fairy",
+            "sprite": "/images/game/fairy.png",
+            "order": 25,
+            "qty": 1,
+            "buy": 150,
+            "sell": 75,
+            "recover": 0.75,
+            "info": "Revives you after Death."
+        }
+    ],
+    [
+        {
+            "name": "Old Hat",
+            "sprite": "/images/game/hat.png",
+            "order": 31,
+            "qty": 1,
+            "buy": 100,
+            "sell": 80,
+            "info": "An old, but stylish hat. Should be sold."
+        },
+        {
+            "name": "Rare Gem",
+            "sprite": "/images/game/gem.png",
+            "order": 32,
+            "qty": 1,
+            "buy": 120,
+            "sell": 100,
+            "info": "A bright and beautiful gem. Should be sold."
+        }
+    ],
+    [
+        {
+            "name": "Health Elixir",
+            "sprite": "/images/game/elixir.png",
+            "order": 40,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "amount": 5,
+            "info": "Increases max HP by 5."
+        },
+        {
+            "name": "Mana Elixir",
+            "sprite": "/images/game/elixir.png",
+            "order": 41,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "amount": 5,
+            "info": "Increases max MP by 4."
+        },
+        {
+            "name": "Strength Elixir",
+            "sprite": "/images/game/elixir.png",
+            "order": 42,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "amount": 2,
+            "info": "Increases Strength by 2."
+        },
+        {
+            "name": "Defense Elixir",
+            "sprite": "/images/game/elixir.png",
+            "order": 43,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "amount": 2,
+            "info": "Increases Defense by 2."
+        },
+        {
+            "name": "Will Elixir",
+            "sprite": "/images/game/elixir.png",
+            "order": 44,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "amount": 2,
+            "info": "Increases Will by 2."
+        },
+        {
+            "name": "Speed Elixir",
+            "sprite": "/images/game/elixir.png",
+            "order": 45,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "amount": 2,
+            "info": "Increases Speed by 2."
+        },
+        {
+            "name": "Luck Elixir",
+            "sprite": "/images/game/elixir.png",
+            "order": 46,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "amount": 2,
+            "info": "Increases Luck by 2."
+        }
+    ],
+    [
+        {
+            "name": "Axe Strike Tome",
+            "sprite": "/images/game/tome.png",
+            "order": 51,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "ability": "Axe Strike",
+            "info": "Learn the Axe Strike ability."
+        },
+        {
+            "name": "Fireball Tome",
+            "sprite": "/images/game/tome.png",
+            "order": 52,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "ability": "Fireball",
+            "info": "Learn the Fireball ability."
+        },
+        {
+            "name": "Poison Dagger Tome",
+            "sprite": "/images/game/tome.png",
+            "order": 53,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "ability": "Poison Dagger",
+            "info": "Learn the Poison Dagger ability."
+        },
+        {
+            "name": "Berserk Tome",
+            "sprite": "/images/game/tome.png",
+            "order": 54,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "ability": "Berserk",
+            "info": "Learn the Berserk ability."
+        },
+        {
+            "name": "Heal Tome",
+            "sprite": "/images/game/tome.png",
+            "order": 55,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "ability": "Heal",
+            "info": "Learn the Heal ability."
+        },
+        {
+            "name": "Steal Tome",
+            "sprite": "/images/game/tome.png",
+            "order": 56,
+            "qty": 1,
+            "buy": 250,
+            "sell": 150,
+            "ability": "Steal",
+            "info": "Learn the Steal ability."
+        }
+    ],
+    [
+        {
+            "name": "Head of Asteroth",
+            "sprite": "/images/game/head.png",
+            "order": 100,
+            "qty": 1,
+            "buy": 0,
+            "sell": 0,
+            "charge": 0,
+            "goal": 5,
+            "info": "Bring any enemy to the brink of death. Recharges after 5 kills."
+        }
+    ]
+]
