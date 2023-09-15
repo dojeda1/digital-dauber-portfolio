@@ -2,13 +2,15 @@
     <div id="nav">
       <a class="nav-logo" href="">
           <!-- <img id="logo-side" src="@/assets/img/art-logo.png" alt="D Logo" /> -->
-          <img src="/images/web-portfolio/D_logo_final.png" alt="D Logo" />
+          <img src="/images/web-portfolio/dauber-logo-circle.png" alt="D Logo" />
       </a>
       <template v-if="!$parent.playingGame">
-        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#portfolio" class="nav-link">Game Dev</a>
+        <a href="#pixel-art" class="nav-link">Pixel Art</a>
+        <a href="#portfolio" class="nav-link">Illustration</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#contact" class="nav-link">Contact</a>
-        <a href="/files/dominic-ojeda_resume.pdf" target="blank" class="nav-link">Resume</a>
+        <!-- <a href="/files/dominic-ojeda_resume.pdf" target="blank" class="nav-link">Resume</a> -->
         <div class="nav-link text-gray" @click="gameToggled">{{code}}</div>
       </template>
       <template v-else>
@@ -83,7 +85,7 @@ export default {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100px;
+      width: 120px;
       height: 100%;
       text-align: center;
       z-index: 4;

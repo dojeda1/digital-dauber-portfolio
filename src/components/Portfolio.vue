@@ -1,11 +1,11 @@
 <template>
 <div id="portfolio">
     <div class="section-title">
-        <h4 class=" text-green">Portfolio</h4>
+        <h4 class=" text-green">Game Dev</h4>
     </div>
     <div class="container">
         <div class="section-header">
-            <h5 class=" text-green">Select a Project</h5>
+            <h5 class=" text-green">Select a Game</h5>
         </div>
             <!-- @ready="logEvents('ready', $event)"
             @previous="logEvents('previous', $event)"
@@ -17,9 +17,9 @@
             @slide="logEvents('slide', $event)"
             :touchable="false"
             :infinite="true"
-            :visible-slides="5"
+            :visible-slides="4"
             :gap="3"
-            :slide-ratio="1 / 5"
+            :slide-ratio="1 / 4"
             :dragging-distance="20"
             :breakpoints="{
                 1000: {
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="col-4 s_col-12">
-                <h6 class=" text-green">- About the Project -</h6>
+                <h6 class=" text-green">- About the Game -</h6>
                 <p>{{ currentProject.sum }}</p>
                 <h6 class=" text-green">- Made Using -</h6>
                 <p>{{ currentProject.list.join(' &#8226; ') }}</p>
@@ -117,20 +117,20 @@ export default {
             ],
             projects: [
                 {
-                    title: "Meal Planner",
-                    mockup: "/images/meal-planner/meal-planner-mock.png",
+                    title: "Dino Mayhem",
+                    mockup: "/images/dino-mayhem/screen-shot.jpg",
                     paint: "/images/meal-planner/meal-planner-paint.png",
-                    img1: "/images/meal-planner/meal-planner-preview-1.jpg",
-                    img2: "/images/meal-planner/meal-planner-preview-2.jpg",
-                    img3: "/images/meal-planner/meal-planner-preview-3.jpg",
-                    visit: "https://vue-meal-planner-dojeda1.vercel.app/",
+                    img1: "/images/dino-mayhem/screen-shot.jpg",
+                    img2: "/images/dino-mayhem/screen-shot-2.jpg",
+                    img3: "/images/dino-mayhem/screen-shot-3.jpg",
+                    visit: "https://thedigitaldauber.itch.io/dino-mayhem",
                     code: "https://github.com/dojeda1/vue-meal-planner",
                     sum: "Using the Spoonacular API, Meal Planner allows you to look up recipes with optional dietary restrictions and save them to your favorites. You can view recipe cards to see a meal's ingredients and instructions. From the Calendar page, you can choose any recipe from your favorites, add it to a meal period on your weekly calendar, and save the plan for later. Both the favorites and the weekly meal plan are stored using Firebase's Cloud Firestore database.",
                     list: ["HTML", "CSS", "JavaScript", "Vue.js", "Materialize", "Firebase", "Spoonacular API", "Heal Thru Words API"],
                     isActive: true
                 },
                 {
-                    title: "Bug Memory",
+                    title: "Matchy Dice",
                     mockup: "/images/bug-memory/bug-memory-mock.png",
                     paint: "/images/bug-memory/bug-memory-paint.png",
                     img1: "/images/bug-memory/bug-memory-preview-1.jpg",
@@ -143,33 +143,33 @@ export default {
                     isActive: false
                 },
                 {
-                    title: "Wizard Words",
-                    mockup: "/images/wizard-words/wizard-words-mock.png",
-                    paint: "/images/wizard-words/wizard-words-paint.png",
-                    img1: "/images/wizard-words/wizard-words-preview-1.jpg",
-                    img2: "/images/wizard-words/wizard-words-preview-2.jpg",
-                    img3: "/images/wizard-words/wizard-words-preview-3.jpg",
-                    visit: "https://dojeda1.github.io/Word-Guess-Game/",
+                    title: "Shark Dentist",
+                    mockup: "/images/shark-dentist/screen-1.png",
+                    paint: "/images/shark-dentist/shark-dentist-paint.png",
+                    img1: "/images/shark-dentist/screen-1.png",
+                    img2: "/images/shark-dentist/screen-2.png",
+                    img3: "/images/shark-dentist/screen-3.png",
+                    visit: "https://thedigitaldauber.itch.io/shark-dentist",
                     code: "https://github.com/dojeda1/Word-Guess-Game",
                     sum: "This version of the traditional Hangman game is fashioned after the wizarding world of Harry Potter. The game displays what letters you have previously guessed, how many guesses you have left, as well as your wins and losses. The design was inspired by the Marauder's Map and uses jQuery for a number of cool fade-in and fade-out animations.",
                     list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
                     isActive: false
                 },
                 {
-                    title: "Sci-fi RPG",
-                    mockup: "/images/scifi-rpg/scifi-rpg-mock.png",
-                    paint: "/images/scifi-rpg/scifi-rpg-paint.png",
-                    img1: "/images/scifi-rpg/scifi-rpg-preview-1.jpg",
-                    img2: "/images/scifi-rpg/scifi-rpg-preview-2.jpg",
-                    img3: "/images/scifi-rpg/scifi-rpg-preview-3.jpg",
-                    visit: "https://dojeda1.github.io/Space-RPG-Game/",
+                    title: "Sneaky Sheep",
+                    mockup: "/images/sneaky-sheep/screen-1.png",
+                    paint: "/images/sneaky-sheep/sneaky-sheep-paint.png",
+                    img1: "/images/sneaky-sheep/screen-2.png",
+                    img2: "/images/sneaky-sheep/screen-3.png",
+                    img3: "/images/sneaky-sheep/screen-4.png",
+                    visit: "https://thedigitaldauber.itch.io/sneakysheep",
                     code: "https://github.com/dojeda1/Space-RPG-Game",
                     sum: "Choose one of 4 classic Sci-fi characters to play as and try to defeat all of the remaining opponents. Each character has different health, strength, and leveling up stats and you must choose defenders in particular orders to obtain victory.",
                     list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
                     isActive: false
                 },
                 {
-                    title: "Trial of Socrates",
+                    title: "Pack Hunters",
                     mockup: "/images/socrates/socrates-mock.png",
                     paint: "/images/socrates/socrates-paint.png",
                     img1: "/images/socrates/socrates-preview-1.jpg",
@@ -180,20 +180,20 @@ export default {
                     sum: "This is a text based adventure game inspired by the ancient tale of when Socrates was sentenced to death by a jury of his fellow Athenians. Playing as the philosopher himself, you make branching choices powered by IF/ELSE functions in JavaScript that lead to alternate endings. The goal is to find the historical ending or simply explore alternate timelines. ",
                     list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
                     isActive: false
-                },
-                {
-                    title: "Trivia Game",
-                    mockup: "/images/trivia-game/trivia-mock.png",
-                    paint: "/images/trivia-game/trivia-paint.png",
-                    img1: "/images/trivia-game/trivia-preview-1.jpg",
-                    img2: "/images/trivia-game/trivia-preview-2.jpg",
-                    img3: "/images/trivia-game/trivia-preview-3.jpg",
-                    visit: "https://dojeda1.github.io/TriviaGame/",
-                    code: "https://github.com/dojeda1/TriviaGame",
-                    sum: "Test your knowledge of both the metric and imperial units of measurement. Each question is timed and will move onto the next if left unanswered. After each question, a fun GIF is briefly displayed according to whether or not you were correct. At the end of the game, the number of right, wrong, and unanswered responses is displayed along side your overall score. Your high scores are also shown at the bottom of the results page.",
-                    list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
-                    isActive: false
-                },
+                }
+                // {
+                //     title: "Trivia Game",
+                //     mockup: "/images/trivia-game/trivia-mock.png",
+                //     paint: "/images/trivia-game/trivia-paint.png",
+                //     img1: "/images/trivia-game/trivia-preview-1.jpg",
+                //     img2: "/images/trivia-game/trivia-preview-2.jpg",
+                //     img3: "/images/trivia-game/trivia-preview-3.jpg",
+                //     visit: "https://dojeda1.github.io/TriviaGame/",
+                //     code: "https://github.com/dojeda1/TriviaGame",
+                //     sum: "Test your knowledge of both the metric and imperial units of measurement. Each question is timed and will move onto the next if left unanswered. After each question, a fun GIF is briefly displayed according to whether or not you were correct. At the end of the game, the number of right, wrong, and unanswered responses is displayed along side your overall score. Your high scores are also shown at the bottom of the results page.",
+                //     list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+                //     isActive: false
+                // },
                 // {
                 //     title: "Fur Butlr",
                 //     mockup: "/images/fur-butlr/fur-butlr-mock.png",
@@ -207,21 +207,21 @@ export default {
                 //     list: ["HTML", "CSS", "JavaScript", "jQuery", "Materialize", "MySQL", "Node.js", "Sequelize"],
                 //     isActive: false
                 // },
-                {
-                    title: "Book Finder",
-                    mockup: "/images/book-finder/book-finder-mock.png",
-                    paint: "/images/book-finder/book-finder-paint.png",
-                    img1: "/images/book-finder/book-finder-preview-1.jpg",
-                    img2: "/images/book-finder/book-finder-preview-2.jpg",
-                    img3: "/images/book-finder/book-finder-preview-3.jpg",
-                    visit: "https://book-search-dojeda1.vercel.app/",
-                    code: "https://github.com/dojeda1/book-search",
-                    // sum: "Search through a large database of books with the help of the Google Books API. User inputs the title of a book and results are displayed below. They can then visit the google URL, save the book in a MongoDB database for later, or delete it from saved books.",
-                    sum: "Search through a large database of books with the help of the Google Books API. User inputs the title of a book and results are displayed below. They can then visit the google URL using the data provided by the API.",
-                    // list: ["HTML", "CSS", "JavaScript", "React.js", "MongoDB", "Mongoose", "Google Books API", "Bootstrap"],
-                    list: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Google Books API"],
-                    isActive: false
-                }
+                // {
+                //     title: "Book Finder",
+                //     mockup: "/images/book-finder/book-finder-mock.png",
+                //     paint: "/images/book-finder/book-finder-paint.png",
+                //     img1: "/images/book-finder/book-finder-preview-1.jpg",
+                //     img2: "/images/book-finder/book-finder-preview-2.jpg",
+                //     img3: "/images/book-finder/book-finder-preview-3.jpg",
+                //     visit: "https://book-search-dojeda1.vercel.app/",
+                //     code: "https://github.com/dojeda1/book-search",
+                //     // sum: "Search through a large database of books with the help of the Google Books API. User inputs the title of a book and results are displayed below. They can then visit the google URL, save the book in a MongoDB database for later, or delete it from saved books.",
+                //     sum: "Search through a large database of books with the help of the Google Books API. User inputs the title of a book and results are displayed below. They can then visit the google URL using the data provided by the API.",
+                //     // list: ["HTML", "CSS", "JavaScript", "React.js", "MongoDB", "Mongoose", "Google Books API", "Bootstrap"],
+                //     list: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Google Books API"],
+                //     isActive: false
+                // }
             ]
         }
     },
@@ -281,7 +281,7 @@ export default {
         background-color: rgba(33, 33, 33, 0.75);
         height: 100%;
         width: 100%;
-        padding: 10px;
+        padding: 16px;
     }
     .image-modal img{
         object-fit: contain;
@@ -311,16 +311,5 @@ export default {
     }
     .paint-pic-container.active {
         color: #8dc63f;
-    }
-
-    /* Vueper */
-    .vueperslides__bullet .default {
-        background-color: #212121;
-        border-color: #8dc63f;
-        border-width: 0px;
-    }
-
-    .vueperslides__bullet--active .default {
-        border-width: 6px;
     }
 </style>

@@ -104,9 +104,9 @@ p {
 /* HERE */
 
 #main-content {
-    width: calc(100% - 100px);
+    width: calc(100% - 120px);
     /* height: 100%; */
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 .section-title {
@@ -387,6 +387,16 @@ p {
 }
 .select-buttons .btn {
     margin: 0;
+}
+/* Vueper */
+.vueperslides__bullet .default {
+    background-color: #212121;
+    border-color: #8dc63f;
+    border-width: 0px;
+}
+
+.vueperslides__bullet--active .default {
+    border-width: 6px;
 }
 
 .idle {

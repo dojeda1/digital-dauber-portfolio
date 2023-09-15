@@ -1,18 +1,22 @@
 <template>
-    <div id="hero" style="background-image: url('/images/web-portfolio/trees2.jpg')">
-        <img class="hero-logo" src="/images/web-portfolio/d-logo.png" alt="D Logo" />
-        <h1 class="white-text font2">DOMINIC OJEDA</h1>
-        <h5 class="font1">Full Stack Web Developer</h5>
-        <div class="hero-icons">
-            <a href="https://www.linkedin.com/in/dominic-ojeda/" target="blank">
-                <img class="hero-icon" src="/images/web-portfolio/linkedin-logo.png" alt="Linkedin Logo" />
-            </a>
-            <a href="https://github.com/dojeda1" target="blank">
-                <img class="hero-icon" src="/images/web-portfolio/github-logo.png" alt="GitHub Logo" />
-            </a>
-            <a href="/files/dominic-ojeda_resume.pdf" target="blank">
-                <img class="hero-icon" src="/images/web-portfolio/resume-logo.png" alt="Resume Logo" />
-            </a>
+    <div id="hero">
+        <img class="hero-image" src="/images/web-portfolio/dino-portrait-full.png" alt="">
+        <div class="gradient"></div>
+        <div class="hero-elements">
+            <img class="hero-logo" src="/images/web-portfolio/dauber-logo-circle.png" alt="D Logo" />
+            <h1 class="white-text font2">The Digital Dauber</h1>
+            <h5 class="font1 text-green">Digital Artist & Game Dev</h5>
+            <div class="hero-icons">
+                <a href="https://www.linkedin.com/in/dominic-ojeda/" target="blank">
+                    <img class="hero-icon" src="/images/web-portfolio/linkedin-logo.png" alt="Linkedin Logo" />
+                </a>
+                <a href="https://github.com/dojeda1" target="blank">
+                    <img class="hero-icon" src="/images/web-portfolio/github-logo.png" alt="GitHub Logo" />
+                </a>
+                <a href="/files/dominic-ojeda_resume.pdf" target="blank">
+                    <img class="hero-icon" src="/images/web-portfolio/resume-logo.png" alt="Resume Logo" />
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -26,18 +30,60 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
     #hero {
+        /* -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); */
         height: 100%;
         min-height: 500px;
         padding: 20px;
-        background-color: #2bb673;
+        /* background-color: #2bb673; */
+        /* background:linear-gradient(0deg, rgba(64, 64, 64, 0.8), rgba(125, 125, 125, 0.8)), url('/images/web-portfolio/dino-portrait-full.png'); */
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         color: white;
         text-align: center;
-        background-position: center;
-        background-size: cover;
+        /* background-position: center;
+        background-size: cover; */
+        overflow: hidden;
+        position: relative;
+    }
+
+    #heroo::before {
+        content: "";
+        position: absolute;
+        top: 50%;  /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/images/web-portfolio/dino-portrait-full.png');
+        filter: grayscale(100%);
+    }
+
+    .hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* background:linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/images/web-portfolio/dino-portrait-full.png'); */
+        filter: grayscale(100%);
+    }
+
+    .gradient {
+        position: absolute;
+        top: 0;  /* position the top  edge of the element at the middle of the parent */
+        left: 0; /* position the left edge of the element at the middle of the parent */
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+    }
+
+    .hero-elements {
+        position: relative;
     }
 
     .hero-logo {

@@ -9,21 +9,21 @@
         </div>
         <div class="grid">
             <div class="col-8 s_col-12 dual-buttons">
-                <a target="_blank" href="mailto:dominicojeda.coding@gmail.com">
+                <a target="_blank" href="mailto:thedigitaldauber@gmail.com">
                     <button class="btn btn-blue">Email<i className="material-icons right">send</i></button>
                 </a>
             </div>
             <div class="col-4 s_col-12">
                 <h6 class="text-blue">- Contact Info -</h6>
-                <p class="email">dominicojeda.coding@gmail.com</p>
-                <p>
+                <p class="email">thedigitaldauber@gmail.com</p>
+                <!-- <p>
                     <a href="https://www.linkedin.com/in/dominic-ojeda/" target="_blank"
                         class="contact-link">Linkedin</a>
                 </p>
                 <p>
                     <a href="https://github.com/dojeda1" target="_blank"
                         class="contact-link">Github</a>
-                </p>
+                </p> -->
             </div>
         </div>
     </div>

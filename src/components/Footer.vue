@@ -1,6 +1,6 @@
 <template>
 <div id="footer">
-    <h5 class="text-blue">Live, Learn, Create</h5>
+    <h5 class="text-blue">Dream, Draw, Dev</h5>
     <div>
         <a href="https://www.linkedin.com/in/dominic-ojeda/" target="blank">
             <img class="footer-icon" src="/images/web-portfolio/linkedin-logo.png" alt="Linkedin Logo" />
