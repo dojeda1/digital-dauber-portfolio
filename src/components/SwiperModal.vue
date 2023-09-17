@@ -8,7 +8,12 @@
         :gap="3"
         :slide-ratio="1 / 2"
         :dragging-distance="20"
-        >
+        :breakpoints="{
+            600: {
+                touchable: true,
+                arrows: false,
+            } 
+        }">
             <!-- @click="$refs.projectVueperSlides.goToSlide(index)" -->
             <vueper-slide v-for="(slide, index) in images" :key="index"
             @click="closeModal"

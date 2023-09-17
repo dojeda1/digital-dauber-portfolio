@@ -55,51 +55,51 @@ export default {
             images: [
                 {
                     url: "/images/illustration/forest-spirit.jpeg",
-                    alt: "Alt Text"
+                    alt: "Forest Spirit"
                 },
                 {
                     url: "/images/illustration/aku.jpeg",
-                    alt: "Alt Text"
+                    alt: "Aku"
                 },
                 {
                     url: "/images/illustration/samus-aran.jpeg",
-                    alt: "Alt Text"
+                    alt: "Samus Aran"
                 },
                 {
                     url: "/images/illustration/witch-lords.jpeg",
-                    alt: "Alt Text"
+                    alt: "Witch Lords"
                 },
                 {
                     url: "/images/illustration/goodgis-vs-badgis.jpg",
-                    alt: "Alt Text"
+                    alt: "Goodgis vs. Badgis"
                 },
                 {
                     url: "/images/illustration/monarch-1.jpg",
-                    alt: "Alt Text"
+                    alt: "Monarch"
                 },
                 {
                     url: "/images/illustration/26-connect.jpg",
-                    alt: "Alt Text"
+                    alt: "Angel and Demon"
                 },
                 {
                     url: "/images/illustration/annabelinda-full.jpg",
-                    alt: "Alt Text"
+                    alt: "Annabelinda"
                 },
                 {
                     url: "/images/illustration/dragoro-full.jpg",
-                    alt: "Alt Text"
+                    alt: "Dragoro"
                 },
                 {
                     url: "/images/illustration/runa-and-aitor.jpg",
-                    alt: "Alt Text"
+                    alt: "Runa and Aitor"
                 },
                 {
                     url: "/images/illustration/yavelda.jpg",
-                    alt: "Alt Text"
+                    alt: "Yavelda"
                 },
                 {
                     url: "/images/illustration/af.jpg",
-                    alt: "Alt Text"
+                    alt: "Autumn Frost"
                 }
             ]
         }

@@ -62,8 +62,14 @@
             <div class="col-4 s_col-12">
                 <h6 class=" text-green">- About the Game -</h6>
                 <p>{{ currentProject.sum }}</p>
-                <h6 class=" text-green">- Made Using -</h6>
-                <p>{{ currentProject.list.join(' &#8226; ') }}</p>
+                <h6 class=" text-green">- Tags -</h6>
+                <p>
+                    <span v-for="item in currentProject.list"
+                    :key="item" 
+                    class="tag">
+                        {{ item }}
+                    </span>
+                </p>
             </div>
             <div class="col-4 s_col-12">
                 <img class="preview-img" alt="Screenshot 1"
@@ -135,7 +141,7 @@ export default {
                     visit: "https://thedigitaldauber.itch.io/dino-mayhem",
                     code: "https://github.com/dojeda1/vue-meal-planner",
                     sum: "Using the Spoonacular API, Meal Planner allows you to look up recipes with optional dietary restrictions and save them to your favorites. You can view recipe cards to see a meal's ingredients and instructions. From the Calendar page, you can choose any recipe from your favorites, add it to a meal period on your weekly calendar, and save the plan for later. Both the favorites and the weekly meal plan are stored using Firebase's Cloud Firestore database.",
-                    list: ["HTML", "CSS", "JavaScript", "Vue.js", "Materialize", "Firebase", "Spoonacular API", "Heal Thru Words API"],
+                    list: ["Godot", "Aseprite", "Arcade", "Platformer", "Unlockables", "Web"],
                     isActive: true
                 },
                 {
@@ -148,7 +154,7 @@ export default {
                     visit: "https://thedigitaldauber.itch.io/matchy-dice",
                     code: "https://github.com/dojeda1/memory-game",
                     sum: "Test your memory by selecting every bug card without choosing the same one twice. Each time one is chosen, the game will shuffle the cards and display them in a random order using REACT. If you select the same bug twice, you lose!",
-                    list: ["HTML", "CSS", "JavaScript", "Bootstrap", "React.js", "Node.js"],
+                    list: ["Godot", "Aseprite", "Arcade", "Match 3", "Mobile Friendly", "Web"],
                     isActive: false
                 },
                 {
@@ -161,7 +167,7 @@ export default {
                     visit: "https://thedigitaldauber.itch.io/shark-dentist",
                     code: "https://github.com/dojeda1/Word-Guess-Game",
                     sum: "This version of the traditional Hangman game is fashioned after the wizarding world of Harry Potter. The game displays what letters you have previously guessed, how many guesses you have left, as well as your wins and losses. The design was inspired by the Marauder's Map and uses jQuery for a number of cool fade-in and fade-out animations.",
-                    list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+                    list: ["Godot", "Aseprite", "Arcade", "Web"],
                     isActive: false
                 },
                 {
@@ -174,7 +180,7 @@ export default {
                     visit: "https://thedigitaldauber.itch.io/sneakysheep",
                     code: "https://github.com/dojeda1/Space-RPG-Game",
                     sum: "Choose one of 4 classic Sci-fi characters to play as and try to defeat all of the remaining opponents. Each character has different health, strength, and leveling up stats and you must choose defenders in particular orders to obtain victory.",
-                    list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+                    list: ["Godot", "Aseprite", "Stealth", "Windows", "Mac"],
                     isActive: false
                 },
                 {
@@ -187,7 +193,7 @@ export default {
                     visit: "https://synsugarstudio.itch.io/uigj-2022",
                     code: "https://github.com/dojeda1/Socrates-Game",
                     sum: "This is a text based adventure game inspired by the ancient tale of when Socrates was sentenced to death by a jury of his fellow Athenians. Playing as the philosopher himself, you make branching choices powered by IF/ELSE functions in JavaScript that lead to alternate endings. The goal is to find the historical ending or simply explore alternate timelines. ",
-                    list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
+                    list: ["Godot", "Aseprite", "Dungeon Crawler", "Web"],
                     isActive: false
                 }
                 // {
@@ -345,5 +351,14 @@ export default {
     }
     .paint-pic-container.active {
         color: #8dc63f;
+    }
+    .tag {
+        display: inline-block;
+        color: white;
+        background-color: #8dc63f;
+        padding: 2px 4px;
+        margin: 2px 2px;
+        font-size: 14px;
+        border-radius: 4px;
     }
 </style>

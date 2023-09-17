@@ -10,7 +10,7 @@
                     <h5 class=" text-jade">Summary</h5>
                 </div>
                 <p>
-                    Hi! My name is Dominic, I am a digital artist and game developer who enjoys coding on both front-end and back-end. Experience producing web applications with HTML, CSS, and JavaScript and creating visual elements with Photoshop and Illustrator. I have a passion for making programs that are visually appealing and fun to interact with. I enjoy solving problems creatively and I am always determined to try again and again until the vision becomes reality. I believe clear communication is key to completing any project, and I work well in a team or going at it alone. I know that the right code can solve any problem.
+                    Hi! My name is Dominic, I am a digital artist and game developer who enjoys bringing my creations to life. Experience producing retro-style gaming experiences with the Godot Engine and creating visual elements with Aseprite and Photoshop. I have a passion for making games that are visually appealing and fun to play. I enjoy solving problems creatively and I am always determined to try again and again until the vision becomes reality. I believe clear communication is key to completing any project, and I work well in a team or going at it alone. I know that the right code can solve any problem.
                 </p>
             </div>
             <div class="col-4 s_col-12">

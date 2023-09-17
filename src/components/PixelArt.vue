@@ -15,24 +15,6 @@
             </div>
         </div>
     </div>
-    <!-- <div v-if="showSlides" class="image-slides">
-        <vueper-slides class="no-shadow"
-        ref="pixelVueperSlides"
-        @slide="logEvents('slide', $event)"
-        :touchable="false"
-        :infinite="true"
-        :visible-slides="1"
-        :gap="3"
-        :slide-ratio="1 / 2"
-        :dragging-distance="20"
-        >
-            <vueper-slide v-for="(slide, index) in images" :key="index"
-            @click="closeSlides"
-            class="slide"
-            :content="createSlide(slide)"
-            />
-        </vueper-slides>
-    </div> -->
     <SwiperModal
         ref="pixelSwiper"
         :images="images"
@@ -55,35 +37,35 @@ export default {
             images: [
                 {
                     url: "/images/pixel-art/dew-drop-ruins.gif",
-                    alt: "Alt Text"
+                    alt: "Dew Drop Ruins"
                 },
                 {
                     url: "/images/pixel-art/room-example.gif",
-                    alt: "Alt Text"
+                    alt: "Symphonic Souls Room"
                 },
                 {
                     url: "/images/pixel-art/dungeon.gif",
-                    alt: "Alt Text"
+                    alt: "Octobit Dungeon"
                 },
                 {
                     url: "/images/pixel-art/septembit.png",
-                    alt: "Alt Text"
+                    alt: "Septembit 2023"
                 },
                 {
                     url: "/images/pixel-art/baddies-export.png",
-                    alt: "Alt Text"
+                    alt: "Pocket Fables Baddies"
                 },
                 {
                     url: "/images/pixel-art/goblin-game-screen-shot.png",
-                    alt: "Alt Text"
+                    alt: "Goblin Game"
                 },
                 {
                     url: "/images/pixel-art/trex.gif",
-                    alt: "Alt Text"
+                    alt: "T-rex animations"
                 },
                 {
                     url: "/images/pixel-art/space-cat-example.gif",
-                    alt: "Alt Text"
+                    alt: "Space Cat"
                 },
             ]
         }

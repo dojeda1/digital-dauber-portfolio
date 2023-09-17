@@ -2,14 +2,14 @@
 <div id="footer">
     <h5 class="text-blue">Dream, Draw, Dev</h5>
     <div>
-        <a href="https://www.linkedin.com/in/dominic-ojeda/" target="blank">
-            <img class="footer-icon" src="/images/web-portfolio/linkedin-logo.png" alt="Linkedin Logo" />
+        <a href="https://thedigitaldauber.itch.io/" target="blank">
+            <img class="footer-icon" src="/images/web-portfolio/icon-itch.png" alt="Itch.io Logo" />
         </a>
-        <a href="https://github.com/dojeda1" target="blank">
-            <img class="footer-icon" src="/images/web-portfolio/github-logo.png" alt="GitHub Logo" />
+        <a href="https://www.instagram.com/thedigitaldauber/" target="blank">
+            <img class="footer-icon" src="/images/web-portfolio/icon-instagram.png" alt="Instagram Logo" />
         </a>
-        <a href="/files/dominic-ojeda_resume.pdf" target="blank">
-            <img class="footer-icon" src="/images/web-portfolio/resume-logo.png" alt="Resume Logo" />
+        <a href="/https://www.deviantart.com/thedigitaldauber" target="blank">
+            <img class="footer-icon" src="/images/web-portfolio/icon-deviant-art.png" alt="DeviantArt Logo" />
         </a>
     </div>
     <p class="text-blue">Copyright © 2023 - Dominic Ojeda</p>
