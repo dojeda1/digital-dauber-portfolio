@@ -97,6 +97,7 @@ export default {
     }
     .image-slides .vueperslides__inner {
         height: 100%;
+        overflow: hidden;
     }
     .image-slides .vueperslides__parallax-wrapper {
         height: 100%;
