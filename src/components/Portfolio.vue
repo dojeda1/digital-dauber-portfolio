@@ -1,7 +1,7 @@
 <template>
 <div id="portfolio">
     <div class="section-title">
-        <h4 class=" text-green">Game Dev</h4>
+        <h4 class="text-green">Game Dev</h4>
     </div>
     <div class="container">
         <div class="section-header">
@@ -44,7 +44,7 @@
             </vueper-slides>
         </div>
         <div class="section-header">
-            <h5 class=" text-green">Project Summary</h5>
+            <h5 class=" text-green">Game Summary</h5>
         </div>
         <div class="grid">
             <div class="col-8 s_col-12">
@@ -52,11 +52,11 @@
                 <img class="portfolio-devices" :src="currentProject.mockup" alt="Mockup">
                 <div class="dual-buttons">
                 <a target="_blank" :href="currentProject.visit">
-                    <button class="btn">Visit<i className="material-icons right">public</i></button>
+                    <button class="btn">View<i className="material-icons right">public</i></button>
                 </a>
-                <a target="_blank" :href="currentProject.code">
+                <!-- <a target="_blank" :href="currentProject.code">
                     <button class="btn">Code<i className="material-icons right">code</i></button>
-                </a>
+                </a> -->
                 </div>
             </div>
             <div class="col-4 s_col-12">
@@ -68,24 +68,30 @@
             <div class="col-4 s_col-12">
                 <img class="preview-img" alt="Screenshot 1"
                 :src="currentProject.img1"
-                @click="zoomImage(currentProject.img1)">
+                @click="openSlides(0)">
             </div>
             <div class="col-8 row-2 s_col-12">
                 <img class="preview-img" alt="Screenshot 2"
                 :src="currentProject.img2"
-                @click="zoomImage(currentProject.img2)">
+                @click="openSlides(1)">
             </div>
             <div class="col-4 s_col-12">
                 <img class="preview-img" alt="Screenshot 3"
                 :src="currentProject.img3"
-                @click="zoomImage(currentProject.img3)">
+                @click="openSlides(2)">
             </div>
         </div>
     </div>
-    <div v-if="imageModal != ''" class="image-modal"
+    <!-- <div v-if="imageModal != ''" class="image-modal"
     @click="zoomImage('')">
         <img :src="imageModal" alt="zoomed image">
-    </div>
+    </div> -->
+    <SwiperModal
+        ref="pixelSwiper"
+        :images="images"
+        :showSlides="showSlides"
+        @closeModal="closeSlides"
+    />
 </div>
 </template>
 
@@ -93,33 +99,36 @@
 // In your Vue.js component.
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
+import SwiperModal from './SwiperModal.vue'
 
 export default {
     name: 'Portfolio',
-    components: { VueperSlides, VueperSlide },
+    // components: { VueperSlides, VueperSlide },
+    components: { VueperSlides, VueperSlide, SwiperModal },
     data() {
         return {
             currentProject: {},
             imageModal: '',
-            slides: [
-                {
-                title: 'Slide #1',
-                content: 'Slide content.'
-                },
-                {
-                title: 'Slide #2',
-                content: 'Slide content.'
-                },
-                {
-                title: 'Slide #3',
-                content: 'Slide content.'
-                },
-            ],
+            showSlides: false,
+            // slides: [
+            //     {
+            //     title: 'Slide #1',
+            //     content: 'Slide content.'
+            //     },
+            //     {
+            //     title: 'Slide #2',
+            //     content: 'Slide content.'
+            //     },
+            //     {
+            //     title: 'Slide #3',
+            //     content: 'Slide content.'
+            //     },
+            // ],
             projects: [
                 {
                     title: "Dino Mayhem",
                     mockup: "/images/dino-mayhem/screen-shot.jpg",
-                    paint: "/images/meal-planner/meal-planner-paint.png",
+                    paint: "/images/dino-mayhem/cover-image.jpg",
                     img1: "/images/dino-mayhem/screen-shot.jpg",
                     img2: "/images/dino-mayhem/screen-shot-2.jpg",
                     img3: "/images/dino-mayhem/screen-shot-3.jpg",
@@ -131,12 +140,12 @@ export default {
                 },
                 {
                     title: "Matchy Dice",
-                    mockup: "/images/bug-memory/bug-memory-mock.png",
-                    paint: "/images/bug-memory/bug-memory-paint.png",
-                    img1: "/images/bug-memory/bug-memory-preview-1.jpg",
-                    img2: "/images/bug-memory/bug-memory-preview-2.jpg",
-                    img3: "/images/bug-memory/bug-memory-preview-3.jpg",
-                    visit: "https://bug-memory.vercel.app/",
+                    mockup: "/images/matchy-dice/screen-1.png",
+                    paint: "/images/matchy-dice/banner.png",
+                    img1: "/images/matchy-dice/screen-2.png",
+                    img2: "/images/matchy-dice/screen-3.png",
+                    img3: "/images/matchy-dice/screen-4.png",
+                    visit: "https://thedigitaldauber.itch.io/matchy-dice",
                     code: "https://github.com/dojeda1/memory-game",
                     sum: "Test your memory by selecting every bug card without choosing the same one twice. Each time one is chosen, the game will shuffle the cards and display them in a random order using REACT. If you select the same bug twice, you lose!",
                     list: ["HTML", "CSS", "JavaScript", "Bootstrap", "React.js", "Node.js"],
@@ -145,7 +154,7 @@ export default {
                 {
                     title: "Shark Dentist",
                     mockup: "/images/shark-dentist/screen-1.png",
-                    paint: "/images/shark-dentist/shark-dentist-paint.png",
+                    paint: "/images/shark-dentist/title-image.png",
                     img1: "/images/shark-dentist/screen-1.png",
                     img2: "/images/shark-dentist/screen-2.png",
                     img3: "/images/shark-dentist/screen-3.png",
@@ -158,7 +167,7 @@ export default {
                 {
                     title: "Sneaky Sheep",
                     mockup: "/images/sneaky-sheep/screen-1.png",
-                    paint: "/images/sneaky-sheep/sneaky-sheep-paint.png",
+                    paint: "/images/sneaky-sheep/cover.png",
                     img1: "/images/sneaky-sheep/screen-2.png",
                     img2: "/images/sneaky-sheep/screen-3.png",
                     img3: "/images/sneaky-sheep/screen-4.png",
@@ -170,12 +179,12 @@ export default {
                 },
                 {
                     title: "Pack Hunters",
-                    mockup: "/images/socrates/socrates-mock.png",
-                    paint: "/images/socrates/socrates-paint.png",
-                    img1: "/images/socrates/socrates-preview-1.jpg",
-                    img2: "/images/socrates/socrates-preview-2.jpg",
-                    img3: "/images/socrates/socrates-preview-3.jpg",
-                    visit: "https://dojeda1.github.io/Socrates-Game/",
+                    mockup: "/images/pack-hunters/screen-1.png",
+                    paint: "/images/pack-hunters/cover.png",
+                    img1: "/images/pack-hunters/screen-2.png",
+                    img2: "/images/pack-hunters/screen-3.png",
+                    img3: "/images/pack-hunters/screen-4.png",
+                    visit: "https://synsugarstudio.itch.io/uigj-2022",
                     code: "https://github.com/dojeda1/Socrates-Game",
                     sum: "This is a text based adventure game inspired by the ancient tale of when Socrates was sentenced to death by a jury of his fellow Athenians. Playing as the philosopher himself, you make branching choices powered by IF/ELSE functions in JavaScript that lead to alternate endings. The goal is to find the historical ending or simply explore alternate timelines. ",
                     list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
@@ -241,15 +250,40 @@ export default {
             this.projects.forEach(project => project.isActive = false)
             this.projects[ind].isActive = true;
         },
-        zoomImage(src) {
-            console.log('hey');
-            this.imageModal = src;
-        },
+        // zoomImage(src) {
+        //     console.log('hey');
+        //     this.imageModal = src;
+        // },
         createSlide(project) {
             return `
             <img class="paint-pic" src="${project.paint}" alt="Painted Preview">
             <p>${project.title}</p>
         `
+        },
+        openSlides(index) {
+            this.showSlides = true;
+            this.$refs.pixelSwiper.openModal(index);
+        },
+        closeSlides() {
+            this.showSlides = false
+        }
+    },
+    computed: {
+        images() {
+            return [
+                {
+                    url: this.currentProject.img1,
+                    alt: "game screenshot"
+                },
+                {
+                    url: this.currentProject.img2,
+                    alt: "game screenshot"
+                },
+                {
+                    url: this.currentProject.img3,
+                    alt: "game screenshot"
+                }
+            ]
         }
     },
     created: function() {

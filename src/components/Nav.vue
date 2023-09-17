@@ -5,9 +5,10 @@
           <img src="/images/web-portfolio/dauber-logo-circle.png" alt="D Logo" />
       </a>
       <template v-if="!$parent.playingGame">
-        <a href="#portfolio" class="nav-link">Game Dev</a>
-        <a href="#pixel-art" class="nav-link">Pixel Art</a>
-        <a href="#portfolio" class="nav-link">Illustration</a>
+        <a href="#portfolio" class="nav-link d-none s_d-in-block">Portfolio</a>
+        <a href="#portfolio" class="nav-link s_d-none">Game Dev</a>
+        <a href="#pixel-art" class="nav-link s_d-none">Pixel Art</a>
+        <a href="#illustration" class="nav-link s_d-none">Illustration</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#contact" class="nav-link">Contact</a>
         <!-- <a href="/files/dominic-ojeda_resume.pdf" target="blank" class="nav-link">Resume</a> -->

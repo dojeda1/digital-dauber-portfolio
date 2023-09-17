@@ -1,7 +1,7 @@
 <template>
-<div id="pixel-art">
+<div id="illustration">
     <div class="section-title">
-        <h4 class="text-green">Pixel Art</h4>
+        <h4 class="text-green">Illustration</h4>
     </div>
     <div class="container">
         <div class="grid">
@@ -34,7 +34,7 @@
         </vueper-slides>
     </div> -->
     <SwiperModal
-        ref="pixelSwiper"
+        ref="illustrationSwiper"
         :images="images"
         :showSlides="showSlides"
         @closeModal="closeSlides"
@@ -54,37 +54,53 @@ export default {
             showSlides: false,
             images: [
                 {
-                    url: "/images/pixel-art/dew-drop-ruins.gif",
+                    url: "/images/illustration/forest-spirit.jpeg",
                     alt: "Alt Text"
                 },
                 {
-                    url: "/images/pixel-art/room-example.gif",
+                    url: "/images/illustration/aku.jpeg",
                     alt: "Alt Text"
                 },
                 {
-                    url: "/images/pixel-art/dungeon.gif",
+                    url: "/images/illustration/samus-aran.jpeg",
                     alt: "Alt Text"
                 },
                 {
-                    url: "/images/pixel-art/septembit.png",
+                    url: "/images/illustration/witch-lords.jpeg",
                     alt: "Alt Text"
                 },
                 {
-                    url: "/images/pixel-art/baddies-export.png",
+                    url: "/images/illustration/goodgis-vs-badgis.jpg",
                     alt: "Alt Text"
                 },
                 {
-                    url: "/images/pixel-art/goblin-game-screen-shot.png",
+                    url: "/images/illustration/monarch-1.jpg",
                     alt: "Alt Text"
                 },
                 {
-                    url: "/images/pixel-art/trex.gif",
+                    url: "/images/illustration/26-connect.jpg",
                     alt: "Alt Text"
                 },
                 {
-                    url: "/images/pixel-art/space-cat-example.gif",
+                    url: "/images/illustration/annabelinda-full.jpg",
                     alt: "Alt Text"
                 },
+                {
+                    url: "/images/illustration/dragoro-full.jpg",
+                    alt: "Alt Text"
+                },
+                {
+                    url: "/images/illustration/runa-and-aitor.jpg",
+                    alt: "Alt Text"
+                },
+                {
+                    url: "/images/illustration/yavelda.jpg",
+                    alt: "Alt Text"
+                },
+                {
+                    url: "/images/illustration/af.jpg",
+                    alt: "Alt Text"
+                }
             ]
         }
     },
@@ -94,7 +110,7 @@ export default {
         },
         openSlides(index) {
             this.showSlides = true;
-            this.$refs.pixelSwiper.openModal(index);
+            this.$refs.illustrationSwiper.openModal(index);
         },
         closeSlides() {
             this.showSlides = false

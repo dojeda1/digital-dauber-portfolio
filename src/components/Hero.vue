@@ -1,6 +1,6 @@
 <template>
     <div id="hero">
-        <img class="hero-image" src="/images/web-portfolio/dino-portrait-full.png" alt="">
+        <img class="hero-image" src="/images/web-portfolio/dino-portrait-overlay.png" alt="dino portrait">
         <div class="gradient"></div>
         <div class="hero-elements">
             <img class="hero-logo" src="/images/web-portfolio/dauber-logo-circle.png" alt="D Logo" />
@@ -79,7 +79,7 @@ export default {
         left: 0; /* position the left edge of the element at the middle of the parent */
         width: 100%;
         height: 100%;
-        background:linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
     }
 
     .hero-elements {

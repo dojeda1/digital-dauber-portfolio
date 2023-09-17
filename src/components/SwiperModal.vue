@@ -1,8 +1,7 @@
 <template>
-    <div v-if="showSlides" class="image-slides">
+    <div v-show="showSlides" class="image-slides">
         <vueper-slides class="no-shadow"
-        ref="pixelVueperSlides"
-        @slide="logEvents('slide', $event)"
+        ref="swiperImageModal"
         :touchable="false"
         :infinite="true"
         :visible-slides="1"
@@ -12,7 +11,7 @@
         >
             <!-- @click="$refs.projectVueperSlides.goToSlide(index)" -->
             <vueper-slide v-for="(slide, index) in images" :key="index"
-            @click="closeSlides"
+            @click="closeModal"
             class="slide"
             :content="createSlide(slide)"
             />
@@ -48,12 +47,13 @@ export default {
         log(msg) {
             console.log('Log:',msg);
         },
-        handleClick(index) {
+        openModal(index) {
+            console.log('index: ', index);
             // this.showSlides = true;
             // this.$emit('openModal')
-            this.$refs.pixelVueperSlides.goToSlide(index);
+            this.$refs.swiperImageModal.goToSlide(index);
         },
-        closeSlides() {
+        closeModal() {
             // this.showSlides = false
             this.$emit('closeModal')
         },
@@ -98,5 +98,11 @@ export default {
     }
     .image-slides .vueperslide__content{
         height: 100%;
+    }
+    .image-slides .vueperslides__arrow--prev {
+        left: -16px;
+    }
+    .image-slides .vueperslides__arrow--next {
+        right: -16px;
     }
 </style>
