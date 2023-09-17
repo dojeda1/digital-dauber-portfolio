@@ -16,11 +16,11 @@
             <div class="col-4 s_col-12">
                 <h6 class="text-blue">- Contact Info -</h6>
                 <p class="email">thedigitaldauber@gmail.com</p>
-                <!-- <p>
-                    <a href="https://www.linkedin.com/in/dominic-ojeda/" target="_blank"
-                        class="contact-link">Linkedin</a>
-                </p>
                 <p>
+                    <a href="https://linktr.ee/thedigitaldauber" target="_blank"
+                        class="contact-link">Linktree</a>
+                </p>
+                <!-- <p>
                     <a href="https://github.com/dojeda1" target="_blank"
                         class="contact-link">Github</a>
                 </p> -->

@@ -140,7 +140,7 @@ export default {
                     img3: "/images/dino-mayhem/screen-shot-3.jpg",
                     visit: "https://thedigitaldauber.itch.io/dino-mayhem",
                     code: "https://github.com/dojeda1/vue-meal-planner",
-                    sum: "Using the Spoonacular API, Meal Planner allows you to look up recipes with optional dietary restrictions and save them to your favorites. You can view recipe cards to see a meal's ingredients and instructions. From the Calendar page, you can choose any recipe from your favorites, add it to a meal period on your weekly calendar, and save the plan for later. Both the favorites and the weekly meal plan are stored using Firebase's Cloud Firestore database.",
+                    sum: "Cause mayhem in this retro platformer by devouring people and destroying vehicles to earn points. Eating people not only satisfies your appetite for destruction but also helps you regain health, and chowing down on goats provides an even bigger health boost. Test your survival skills as you navigate the urban jungle, aiming to last as long as possible and rack up those high scores. Endure the chaos as long as you can to unlock new skins. Slated for a full Steam release in 2024.",
                     list: ["Godot", "Aseprite", "Arcade", "Platformer", "Unlockables", "Web"],
                     isActive: true
                 },
@@ -153,7 +153,7 @@ export default {
                     img3: "/images/matchy-dice/screen-4.png",
                     visit: "https://thedigitaldauber.itch.io/matchy-dice",
                     code: "https://github.com/dojeda1/memory-game",
-                    sum: "Test your memory by selecting every bug card without choosing the same one twice. Each time one is chosen, the game will shuffle the cards and display them in a random order using REACT. If you select the same bug twice, you lose!",
+                    sum: "A thrilling, match-3 style puzzle challenge. Your objective is to match three dice of the same value by swapping dice left or right, but not up or down! Keep an eye out for those pesky black dice; they can't be swapped directly, but you can change them by hitting the 'Roll Dice' button. Race against time as the dice stack up, aiming to score as many points as possible before they reach the top. Can you master the art of dice swapping and achieve the highest score in ‘Match’ Dice? Made for the GMTK Jam.",
                     list: ["Godot", "Aseprite", "Arcade", "Match 3", "Mobile Friendly", "Web"],
                     isActive: false
                 },
@@ -166,7 +166,7 @@ export default {
                     img3: "/images/shark-dentist/screen-3.png",
                     visit: "https://thedigitaldauber.itch.io/shark-dentist",
                     code: "https://github.com/dojeda1/Word-Guess-Game",
-                    sum: "This version of the traditional Hangman game is fashioned after the wizarding world of Harry Potter. The game displays what letters you have previously guessed, how many guesses you have left, as well as your wins and losses. The design was inspired by the Marauder's Map and uses jQuery for a number of cool fade-in and fade-out animations.",
+                    sum: "Who does a shark go to when they need dental car? That would be you, the Shark Dentist. In this fast-paced game, you're armed with only your handy toothbrush and forceps. Brush and extract those troublesome dental issues as they pop up, keeping the shark's bills climbing higher and higher. With reflexes and precision, you'll aim to be the top shark dentist in town, at least until an angry patient chomps you down. Made for the Global Game Jam.",
                     list: ["Godot", "Aseprite", "Arcade", "Web"],
                     isActive: false
                 },
@@ -179,7 +179,7 @@ export default {
                     img3: "/images/sneaky-sheep/screen-4.png",
                     visit: "https://thedigitaldauber.itch.io/sneakysheep",
                     code: "https://github.com/dojeda1/Space-RPG-Game",
-                    sum: "Choose one of 4 classic Sci-fi characters to play as and try to defeat all of the remaining opponents. Each character has different health, strength, and leveling up stats and you must choose defenders in particular orders to obtain victory.",
+                    sum: "As a literal wolf in sheep's clothing, your mission is to sneak around the farm and devour all the sheep before the sheep discover the truth. With stealth and strategy, you'll navigate the pen, using deceptive 'baaahs' and obstacles to stay out of sight. Can you outsmart the sheep and satisfy your hunger for mutton? Find out in 'Sneaky Sheep'! Made for the SLC Game Devs Jam.",
                     list: ["Godot", "Aseprite", "Stealth", "Windows", "Mac"],
                     isActive: false
                 },
@@ -192,51 +192,10 @@ export default {
                     img3: "/images/pack-hunters/screen-4.png",
                     visit: "https://synsugarstudio.itch.io/uigj-2022",
                     code: "https://github.com/dojeda1/Socrates-Game",
-                    sum: "This is a text based adventure game inspired by the ancient tale of when Socrates was sentenced to death by a jury of his fellow Athenians. Playing as the philosopher himself, you make branching choices powered by IF/ELSE functions in JavaScript that lead to alternate endings. The goal is to find the historical ending or simply explore alternate timelines. ",
-                    list: ["Godot", "Aseprite", "Dungeon Crawler", "Web"],
+                    sum: "Embark on a dungeon-crawling journey filled with adorable animal warriors and Zelda-style gameplay. Clear each room of menacing enemies and add new furry allies to your pack as you progress. Can you defeat all 10 rooms? To be honest, I can’t... Made for the Utah Indie Game Jam. Worked as part of a team, creating all the visual assets and assisting with the code.",
+                    list: ["Godot", "Aseprite", "Dungeon Crawler", "Team Project", "Action", "Web"],
                     isActive: false
                 }
-                // {
-                //     title: "Trivia Game",
-                //     mockup: "/images/trivia-game/trivia-mock.png",
-                //     paint: "/images/trivia-game/trivia-paint.png",
-                //     img1: "/images/trivia-game/trivia-preview-1.jpg",
-                //     img2: "/images/trivia-game/trivia-preview-2.jpg",
-                //     img3: "/images/trivia-game/trivia-preview-3.jpg",
-                //     visit: "https://dojeda1.github.io/TriviaGame/",
-                //     code: "https://github.com/dojeda1/TriviaGame",
-                //     sum: "Test your knowledge of both the metric and imperial units of measurement. Each question is timed and will move onto the next if left unanswered. After each question, a fun GIF is briefly displayed according to whether or not you were correct. At the end of the game, the number of right, wrong, and unanswered responses is displayed along side your overall score. Your high scores are also shown at the bottom of the results page.",
-                //     list: ["HTML", "CSS", "JavaScript", "jQuery", "Bootstrap"],
-                //     isActive: false
-                // },
-                // {
-                //     title: "Fur Butlr",
-                //     mockup: "/images/fur-butlr/fur-butlr-mock.png",
-                //     paint: "/images/fur-butlr/fur-butlr-paint.png",
-                //     img1: "/images/fur-butlr/fur-butlr-preview-1.jpg",
-                //     img2: "/images/fur-butlr/fur-butlr-preview-2.jpg",
-                //     img3: "/images/fur-butlr/fur-butlr-preview-3.jpg",
-                //     visit: "https://fur-butlr-app.herokuapp.com/",
-                //     code: "https://github.com/ApexPanda/FurButler",
-                //     sum: "A place where pet owners can meet each other and search for pet services like walkers, groomers or sitters. Fur Butlr lets you create a profile, login in, edit your page, and show off your pets.",
-                //     list: ["HTML", "CSS", "JavaScript", "jQuery", "Materialize", "MySQL", "Node.js", "Sequelize"],
-                //     isActive: false
-                // },
-                // {
-                //     title: "Book Finder",
-                //     mockup: "/images/book-finder/book-finder-mock.png",
-                //     paint: "/images/book-finder/book-finder-paint.png",
-                //     img1: "/images/book-finder/book-finder-preview-1.jpg",
-                //     img2: "/images/book-finder/book-finder-preview-2.jpg",
-                //     img3: "/images/book-finder/book-finder-preview-3.jpg",
-                //     visit: "https://book-search-dojeda1.vercel.app/",
-                //     code: "https://github.com/dojeda1/book-search",
-                //     // sum: "Search through a large database of books with the help of the Google Books API. User inputs the title of a book and results are displayed below. They can then visit the google URL, save the book in a MongoDB database for later, or delete it from saved books.",
-                //     sum: "Search through a large database of books with the help of the Google Books API. User inputs the title of a book and results are displayed below. They can then visit the google URL using the data provided by the API.",
-                //     // list: ["HTML", "CSS", "JavaScript", "React.js", "MongoDB", "Mongoose", "Google Books API", "Bootstrap"],
-                //     list: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Google Books API"],
-                //     isActive: false
-                // }
             ]
         }
     },
@@ -354,9 +313,12 @@ export default {
     }
     .tag {
         display: inline-block;
-        color: white;
-        background-color: #8dc63f;
-        padding: 2px 4px;
+        text-transform: lowercase;
+        /* color: white; */
+        /* background-color: #8dc63f;
+        background-color: #212121; */
+        background-color: lightgray;
+        padding: 2px 6px;
         margin: 2px 2px;
         font-size: 14px;
         border-radius: 4px;

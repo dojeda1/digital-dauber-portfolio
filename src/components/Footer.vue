@@ -8,7 +8,7 @@
         <a href="https://www.instagram.com/thedigitaldauber/" target="blank">
             <img class="footer-icon" src="/images/web-portfolio/icon-instagram.png" alt="Instagram Logo" />
         </a>
-        <a href="/https://www.deviantart.com/thedigitaldauber" target="blank">
+        <a href="https://www.deviantart.com/thedigitaldauber" target="blank">
             <img class="footer-icon" src="/images/web-portfolio/icon-deviant-art.png" alt="DeviantArt Logo" />
         </a>
     </div>
