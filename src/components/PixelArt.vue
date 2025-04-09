@@ -57,11 +57,11 @@ export default {
                 },
                 {
                     url: "/images/pixel-art/death.png",
-                    alt: "Goblin Game"
+                    alt: "Death"
                 },
                 {
                     url: "/images/pixel-art/goat-wiz-profile.png",
-                    alt: "T-rex animations"
+                    alt: "Goat Wizard"
                 },
                 {
                     url: "/images/pixel-art/space-cat-example.gif",
