@@ -169,7 +169,7 @@ export default {
                     visit: "https://digitaldauber.itch.io/pupkin-patch",
                     btnText: "View",
                     code: "",
-                    sum: "Take care of the adorable Pupkin to learn more about its mysterious origins. Point and click to interact with the Pupkin. Move items from your inventory to the ground to have the Pupkin interact with them. Gather and sell items to earn more money. Purchase various items for your Pupkin at the Shop. Made for the Cozy Autumn Game Jame",
+                    sum: "Take care of the adorable Pupkin to learn more about its mysterious origins. Point and click to interact with the Pupkin. Move items from your inventory to the ground to have the Pupkin interact with them. Gather and sell items to earn more money. Purchase various items for your Pupkin at the Shop. Made for the Cozy Autumn Game Jam.",
                     list: ["Godot", "Aseprite", "Tamagotchi", "Web"],
                     isActive: false
                 },
