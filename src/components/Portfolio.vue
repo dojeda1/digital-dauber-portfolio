@@ -17,9 +17,9 @@
             @slide="logEvents('slide', $event)"
             :touchable="false"
             :infinite="true"
-            :visible-slides="4"
+            :visible-slides="5"
             :gap="3"
-            :slide-ratio="1 / 4"
+            :slide-ratio="1 / 5"
             :dragging-distance="20"
             :breakpoints="{
                 1000: {
@@ -27,8 +27,8 @@
                     slideRatio: 1 / 3
                 },
                 600: {
-                    visibleSlides: 1,
-                    slideRatio: 1,
+                    visibleSlides: 2,
+                    slideRatio: 1 / 2,
                     touchable: true,
                     arrows: false,
                 } 
@@ -52,11 +52,11 @@
                 <img class="portfolio-devices" :src="currentProject.mockup" alt="Mockup">
                 <div class="dual-buttons">
                 <a target="_blank" :href="currentProject.visit">
-                    <button class="btn">View<i className="material-icons right">public</i></button>
+                    <button class="btn">{{ currentProject.btnText }}<i className="material-icons right">public</i></button>
                 </a>
-                <!-- <a target="_blank" :href="currentProject.code">
+                <a v-if="currentProject.code" target="_blank" :href="currentProject.code">
                     <button class="btn">Code<i className="material-icons right">code</i></button>
-                </a> -->
+                </a>
                 </div>
             </div>
             <div class="col-4 s_col-12">
@@ -133,15 +133,16 @@ export default {
             projects: [
                 {
                     title: "Dino Mayhem",
-                    mockup: "/images/dino-mayhem/screen-shot.jpg",
-                    paint: "/images/dino-mayhem/cover-image.jpg",
-                    img1: "/images/dino-mayhem/screen-shot.jpg",
-                    img2: "/images/dino-mayhem/screen-shot-2.jpg",
-                    img3: "/images/dino-mayhem/screen-shot-3.jpg",
-                    visit: "https://thedigitaldauber.itch.io/dino-mayhem",
-                    code: "https://github.com/dojeda1/vue-meal-planner",
-                    sum: "Cause mayhem in this retro platformer by devouring people and destroying vehicles to earn points. Eating people not only satisfies your appetite for destruction but also helps you regain health, and chowing down on goats provides an even bigger health boost. Test your survival skills as you navigate the urban jungle, aiming to last as long as possible and rack up those high scores. Endure the chaos as long as you can to unlock new skins. Slated for a full Steam release in 2024.",
-                    list: ["Godot", "Aseprite", "Arcade", "Platformer", "Unlockables", "Web"],
+                    mockup: "/images/dino-mayhem/screen-1.png",
+                    paint: "/images/dino-mayhem/cover.png",
+                    img1: "/images/dino-mayhem/screen-4.png",
+                    img2: "/images/dino-mayhem/screen-2.png",
+                    img3: "/images/dino-mayhem/screen-3.png",
+                    visit: "https://store.steampowered.com/app/2614930/Dino_Mayhem/",
+                    btnText: "Wishlist",
+                    code: "",
+                    sum: "Cause mayhem in this retro platformer by devouring people and destroying vehicles to earn points. Eating people not only satisfies your appetite for destruction but also helps you regain health, and chowing down on goats provides an even bigger health boost. Test your survival skills as you navigate the urban jungle, aiming to last as long as possible and rack up those high scores. Endure the chaos as long as you can to unlock new skins. Slated for a full Steam release in 2026.",
+                    list: ["Godot", "Aseprite", "Arcade", "Platformer", "Unlockables", "Steam", "commercial"],
                     isActive: true
                 },
                 {
@@ -151,10 +152,25 @@ export default {
                     img1: "/images/matchy-dice/screen-2.png",
                     img2: "/images/matchy-dice/screen-3.png",
                     img3: "/images/matchy-dice/screen-4.png",
-                    visit: "https://thedigitaldauber.itch.io/matchy-dice",
-                    code: "https://github.com/dojeda1/memory-game",
+                    visit: "https://digitaldauber.itch.io/matchy-dice",
+                    btnText: "View",
+                    code: "",
                     sum: "A thrilling, match-3 style puzzle challenge. Your objective is to match three dice of the same value by swapping dice left or right, but not up or down! Keep an eye out for those pesky black dice; they can't be swapped directly, but you can change them by hitting the 'Roll Dice' button. Race against time as the dice stack up, aiming to score as many points as possible before they reach the top. Can you master the art of dice swapping and achieve the highest score in ‘Match’ Dice? Made for the GMTK Jam.",
                     list: ["Godot", "Aseprite", "Arcade", "Match 3", "Mobile Friendly", "Web"],
+                    isActive: false
+                },
+                {
+                    title: "Pupkin Patch",
+                    mockup: "/images/pupkin-patch/screen-1.png",
+                    paint: "/images/pupkin-patch/cover.png",
+                    img1: "/images/pupkin-patch/screen-2.png",
+                    img2: "/images/pupkin-patch/screen-3.png",
+                    img3: "/images/pupkin-patch/screen-1.png",
+                    visit: "https://digitaldauber.itch.io/pupkin-patch",
+                    btnText: "View",
+                    code: "",
+                    sum: "Take care of the adorable Pupkin to learn more about its mysterious origins. Point and click to interact with the Pupkin. Move items from your inventory to the ground to have the Pupkin interact with them. Gather and sell items to earn more money. Purchase various items for your Pupkin at the Shop. Made for the Cozy Autumn Game Jame",
+                    list: ["Godot", "Aseprite", "Tamagotchi", "Web"],
                     isActive: false
                 },
                 {
@@ -164,8 +180,9 @@ export default {
                     img1: "/images/shark-dentist/screen-1.png",
                     img2: "/images/shark-dentist/screen-2.png",
                     img3: "/images/shark-dentist/screen-3.png",
-                    visit: "https://thedigitaldauber.itch.io/shark-dentist",
-                    code: "https://github.com/dojeda1/Word-Guess-Game",
+                    visit: "https://digitaldauber.itch.io/shark-dentist",
+                    btnText: "View",
+                    code: "",
                     sum: "Who does a shark go to when they need dental car? That would be you, the Shark Dentist. In this fast-paced game, you're armed with only your handy toothbrush and forceps. Brush and extract those troublesome dental issues as they pop up, keeping the shark's bills climbing higher and higher. With reflexes and precision, you'll aim to be the top shark dentist in town, at least until an angry patient chomps you down. Made for the Global Game Jam.",
                     list: ["Godot", "Aseprite", "Arcade", "Web"],
                     isActive: false
@@ -177,8 +194,9 @@ export default {
                     img1: "/images/sneaky-sheep/screen-2.png",
                     img2: "/images/sneaky-sheep/screen-3.png",
                     img3: "/images/sneaky-sheep/screen-4.png",
-                    visit: "https://thedigitaldauber.itch.io/sneakysheep",
-                    code: "https://github.com/dojeda1/Space-RPG-Game",
+                    visit: "https://digitaldauber.itch.io/sneakysheep",
+                    btnText: "View",
+                    code: "",
                     sum: "As a literal wolf in sheep's clothing, your mission is to sneak around the farm and devour all the sheep before the sheep discover the truth. With stealth and strategy, you'll navigate the pen, using deceptive 'baaahs' and obstacles to stay out of sight. Can you outsmart the sheep and satisfy your hunger for mutton? Find out in 'Sneaky Sheep'! Made for the SLC Game Devs Jam.",
                     list: ["Godot", "Aseprite", "Stealth", "Windows", "Mac"],
                     isActive: false
@@ -191,7 +209,8 @@ export default {
                     img2: "/images/pack-hunters/screen-3.png",
                     img3: "/images/pack-hunters/screen-4.png",
                     visit: "https://synsugarstudio.itch.io/uigj-2022",
-                    code: "https://github.com/dojeda1/Socrates-Game",
+                    btnText: "View",
+                    code: "",
                     sum: "Embark on a dungeon-crawling journey filled with adorable animal warriors and Zelda-style gameplay. Clear each room of menacing enemies and add new furry allies to your pack as you progress. Can you defeat all 10 rooms? To be honest, I can’t... Made for the Utah Indie Game Jam. Worked as part of a team, creating all the visual assets and assisting with the code.",
                     list: ["Godot", "Aseprite", "Dungeon Crawler", "Team Project", "Action", "Web"],
                     isActive: false
@@ -282,7 +301,7 @@ export default {
         width: 100%;
         padding: 16px;
     }
-    .image-modal img{
+    .image-modal img {
         object-fit: contain;
         height: 100%;
         width: 100%;

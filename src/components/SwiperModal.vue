@@ -102,6 +102,9 @@ export default {
     .image-slides .vueperslides__parallax-wrapper {
         height: 100%;
     }
+    .image-slides .vueperslides__track {
+        max-height: calc(100vh - 32px);
+    }
     .image-slides .vueperslide__content{
         height: 100%;
     }

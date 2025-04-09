@@ -2,17 +2,17 @@
 <div id="footer">
     <h5 class="text-blue">Dream, Draw, Dev</h5>
     <div>
-        <a href="https://thedigitaldauber.itch.io/" target="blank">
+        <a href="https://digitaldauber.itch.io/" target="blank">
             <img class="footer-icon" src="/images/web-portfolio/icon-itch.png" alt="Itch.io Logo" />
         </a>
-        <a href="https://www.instagram.com/thedigitaldauber/" target="blank">
+        <a href="https://www.instagram.com/digitaldauber/" target="blank">
             <img class="footer-icon" src="/images/web-portfolio/icon-instagram.png" alt="Instagram Logo" />
         </a>
         <a href="https://www.deviantart.com/thedigitaldauber" target="blank">
             <img class="footer-icon" src="/images/web-portfolio/icon-deviant-art.png" alt="DeviantArt Logo" />
         </a>
     </div>
-    <p class="text-blue">Copyright © 2023 - Dominic Ojeda</p>
+    <p class="text-blue">Copyright ©{{ year }} - Dominic Ojeda</p>
 </div>
 </template>
 
@@ -22,6 +22,7 @@ export default {
     data() {
         return {
             title: 'My App is cooler than yours',
+            year: "2000",
             isRotated: [
                 false,
                 false,
@@ -41,6 +42,10 @@ export default {
                 false
             ],
         }
+    },
+    mounted() {
+        const date = new Date()
+        this.year = date.getFullYear()
     },
     methods: {
         log(msg) {

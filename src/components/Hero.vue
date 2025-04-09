@@ -4,13 +4,13 @@
         <div class="gradient"></div>
         <div class="hero-elements">
             <img class="hero-logo" src="/images/web-portfolio/dauber-logo-circle.png" alt="D Logo" />
-            <h1 class="white-text font2">The Digital Dauber</h1>
+            <h1 class="white-text font2">Digital Dauber</h1>
             <h5 class="font1 text-green">Digital Artist & Game Dev</h5>
             <div class="hero-icons">
-            <a href="https://thedigitaldauber.itch.io/" target="blank">
+            <a href="https://digitaldauber.itch.io/" target="blank">
                 <img class="hero-icon" src="/images/web-portfolio/icon-itch.png" alt="Itch.io Logo" />
             </a>
-            <a href="https://www.instagram.com/thedigitaldauber/" target="blank">
+            <a href="https://www.instagram.com/digitaldauber/" target="blank">
                 <img class="hero-icon" src="/images/web-portfolio/icon-instagram.png" alt="Instagram Logo" />
             </a>
             <a href="https://www.deviantart.com/thedigitaldauber" target="blank">
