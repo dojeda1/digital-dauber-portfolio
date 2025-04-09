@@ -56,11 +56,11 @@ export default {
                     alt: "Pocket Fables Baddies"
                 },
                 {
-                    url: "/images/pixel-art/goblin-game-screen-shot.png",
+                    url: "/images/pixel-art/death.png",
                     alt: "Goblin Game"
                 },
                 {
-                    url: "/images/pixel-art/trex.gif",
+                    url: "/images/pixel-art/goat-wiz-profile.png",
                     alt: "T-rex animations"
                 },
                 {
